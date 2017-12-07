@@ -3,6 +3,7 @@
 from SimpleHTTPProxy import SimpleHTTPProxyHandler, test
 import os
 
+
 class SaveImagesProxyHandler(SimpleHTTPProxyHandler):
     def url2path(self, url):
         schema, _, urlpath = self.path.split('/', 2)

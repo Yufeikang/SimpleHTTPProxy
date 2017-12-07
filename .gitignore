@@ -1,0 +1,6 @@
+*.crt
+*.key
+.idea/
+.DS_Store
+*.pyc
+config.json
