@@ -8,7 +8,7 @@
 
 ## docker
 
-```docker build -t pyproxy https://github.com/Yufeikang/SimpleHTTPProxy```
+```docker build -t pyproxy github.com/Yufeikang/SimpleHTTPProxy```
 
 run:
 ``` docker run --name pyproxy -p 8080:8080 -v $PWD/config/:/config --rm  pyproxy```
