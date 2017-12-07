@@ -1,0 +1,5 @@
+.idea
+.git
+SSLBumpProxy/dynamic
+SSLBumpProxy/server.*
+SSLBumpProxy/ca.*
