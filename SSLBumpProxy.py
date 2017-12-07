@@ -33,6 +33,8 @@ class SSLBumpProxyHandler(SimpleHTTPProxyHandler):
         dynamic_certdir = '/config/dynamic/'  # set None if you use a static certificate
         if not os.path.exists('/config/generate_certificates.sh'):
             os.system('cp SSLBumpProxy/generate_certificates.sh /config/generate_certificates.sh')
+            if not os.path.exists('/config/ca.crt'):
+                os.system('sh /config/generate_certificates.sh')
 
     def response_handler(self, req, reqbody, res, resbody):
         global config
