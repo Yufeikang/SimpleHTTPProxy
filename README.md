@@ -13,6 +13,9 @@
 run:
 ``` docker run --name pyproxy -p 8080:8080 -v $PWD/config/:/config --rm  pyproxy```
 
+## set http proxy 
+## install ca crt
+ Enter http://proxy.test/ install ca crt 
 # config
 
 edit config.json
